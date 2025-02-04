@@ -1,3 +1,10 @@
+/*
+ * Temporizador One Shot
+ * Autor: [Seu Nome] | Data: 04/02/2025
+ * Descrição: Aciona LEDs via botão, desligando-os sequencialmente a cada 3s usando add_alarm_in_ms().
+ */
+
+
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
@@ -63,7 +70,7 @@ int main(void) {
     // Configuração da interrupção para o botão
     gpio_set_irq_enabled_with_callback(BOTAO, GPIO_IRQ_EDGE_FALL, true, callback_botao);
  
-    // Loop principal com breve atraso para economia de processamento
+    // Loop principal com breve atraso 
     while (true) {
         sleep_ms(100);
     }
