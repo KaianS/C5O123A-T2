@@ -1,0 +1,20 @@
+[wokwi]
+version = 1
+firmware = 'build/ATIVIDADE02.hex'
+elf = 'build/ATIVIDADE02.elf'
+
+[[pin]]
+number = 2
+mode = "output" # LED Vermelho
+
+[[pin]]
+number = 3
+mode = "output" # LED Amarelo
+
+[[pin]]
+number = 6
+mode = "output" # LED Azul
+
+[[pin]]
+number = 5
+mode = "input_pullup" # Botão
